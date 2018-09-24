@@ -31,7 +31,10 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         cell.textLabel?.text = colors[indexPath.row]
         
-        cell.backgroundColor = UIColor.red
+        let bgColors = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.purple, UIColor.brown];
+        
+        let bgColor = bgColors[indexPath.row]
+        cell.backgroundColor = bgColor
         
         return cell
     }
